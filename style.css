@@ -1,0 +1,113 @@
+header{
+  height: 75px;
+}
+header img{
+  max-height : 75px; 
+  float: left;
+}
+nav{
+  padding-top: 6px;
+}
+.menu{
+  padding-left:15%;
+}
+.menu_item{
+  display: inline-block;
+  margin-left: 0.8em;
+  text-transform: uppercase;
+  border: 4px double brown;
+  background-color: lightblue;
+  padding: 0px;
+  margin: 6px 10px;
+}
+.menu , .stl {
+  background-color: yellow;
+}
+.menu_item:first-child{
+  font-style: italic;
+}
+.menu_item a{
+  padding: 8px 8px;
+  color: grey;
+  text-shadow: 1px 1px black;
+  display: block;
+}
+.menu_item a:hover{
+  color: black;
+  
+  text-shadow: 1px 1px grey; 
+  background-color: #fff;
+}
+main{
+  display: flex;
+}
+.sidebar_menu{
+  display: block;
+/*   width: 20%; */
+/*   height: 100vh;
+  float: left; */
+}
+li[class="item"]{
+  text-align:center;
+  letter-spacing: .1em;
+  font-size:1.2em;	
+  font-family: monospace;
+  font-weight: 600;
+}
+h1{
+  color: orange;
+  text-shadow: 1px 1px 1px black;
+}
+h1:hover{
+  color: #f00;
+}
+.social a, .menu_item a{
+  text-decoration: none;
+}
+.social img{
+  height: 35px;
+}
+.social a::before {
+  content: '';
+  background: centr 50% no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+.social a[href*="facebook"]::before {
+  background-image: url(https://en.facebookbrand.com/wp-content/uploads/2016/05/flogo_rgb_hex-brc-site-250.png);
+}
+.social a[href*="twitter"]::before {
+  background-image: url(https://seeklogo.com/images/T/twitter-2012-negative-logo-5C6C1F1521-seeklogo.com.png);
+}
+.social a[href*="linkedin"]::before {
+  background-image: url(https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png);
+}
+.stl{
+  text-decoration: underline;
+}
+#fir{
+  text-indent: 5em;
+}
+section>p:nth-of-type(n){
+  text-indent: 3em;
+}
+h2 + p {
+  text-indent: 1em !important;
+}
+p+p:last-of-type{
+  font-variant: small-caps;
+}
+footer{
+  background: #eee;
+  padding: 1px 0;
+}
+footer ul{
+  list-style-type: none;
+  text-align: center;
+}
+footer li{
+  display: inline-block;
+  margin: 10px;
+}
